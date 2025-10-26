@@ -8,7 +8,5 @@ router.register(r'nodes' , NodeViewSet)
 router.register(r'edges' , EdgeViewSet)
 
 
-urlpatterns  = [
-    path("helloworld/" ,index ) ,
-    router.urls
-]
+urlpatterns = router.urls
+urlpatterns += [path("helloworld/", index)]
