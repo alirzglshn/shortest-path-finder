@@ -1,0 +1,49 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+dijkstraenv/
+
+# Django migrations
+*/migrations/*.py
+*/migrations/*.pyc
+# but not __init__.py
+!*/migrations/__init__.py
+
+# SQLite database file
+*.sqlite3
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Pytest
+.pytest_cache/
+
+# dotenv
+.env
+
+# Ignore everything in static and media? NO, you want to include them
+# So nothing related to /static/ or /media/ here
