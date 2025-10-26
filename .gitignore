@@ -13,7 +13,7 @@ dijkstraenv/
 !*/migrations/__init__.py
 
 # SQLite database file
-*.sqlite3
+*.mysql
 
 # Logs
 *.log
