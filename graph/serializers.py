@@ -8,10 +8,13 @@ class NodeSerializer(serializers.ModelSerializer):
 
 
 class EdgeSerializer(serializers.ModelSerializer):
+    from_node_name  = serializers.CharField(source="from_node.name" , read_only=True)
+    to_node_name = serializers.CharField(source="to_node.name" , read_only=True)
+
+
     class Meta :
         model = Edge
-        fields = ['id' , 'from_node' , 'to_node' , 'weight' , 'graph']
-
+        fields = ['id', 'from_node', 'to_node', 'from_node_name', 'to_node_name', 'weight', 'graph']
 class GraphSerializer(serializers.ModelSerializer):
     nodes = NodeSerializer(many=True, read_only=True)
     edges = EdgeSerializer(many=True , read_only=True)
