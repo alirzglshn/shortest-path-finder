@@ -7,12 +7,13 @@ __pycache__/
 dijkstraenv/
 
 # Django migrations
-*/migrations/*.py
+# Ignore compiled Python files in migrations
 */migrations/*.pyc
-# but not __init__.py
-!*/migrations/__init__.py
+# Include all other migration scripts, including __init__.py
+!*/migrations/*.py
 
-# SQLite database file
+
+# mysql database file
 *.mysql
 
 # Logs
