@@ -9,7 +9,7 @@ You can import this directly into Postman to start testing all endpoints.
 
 🔷 Project Overview 
 
-Shortest Path Finder is a RESTful API built with Django REST Framework that allows you to:
+Shortest Path Finder is a restfull API built with Django REST Framework that allows you to:
 
 Create, retrieve, update, and delete graphs, nodes, and edges.
 
@@ -42,6 +42,9 @@ Optional path reconstruction to a target node
 
 
 📂 Project Structure
+
+
+
 dijkstra/             # Django project root
 ├─ dijkstra/          # Project settings
 │  ├─ settings.py
@@ -57,6 +60,8 @@ dijkstra/             # Django project root
 
 
 🚀 Installation & Setup
+
+
 Prerequisites
 
 asgiref             
@@ -74,12 +79,20 @@ Steps :
 
 # 1. Clone the repo
 git clone https://github.com/alirzglshn/shortest-path-finder.git
+
+
 cd dijkstra
 
 # 2. Create virtual environment
 python -m venv venv
+
+
 source venv/bin/activate  # Linux/macOS
+
+
 venv\Scripts\activate     # Windows
+
+
 
 # 3. Install dependencies
 pip install -r requirements.txt
